@@ -3,12 +3,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
 import { getTracks } from './actions/tracks'
-
 import './App.css';
 
-
 class App extends Component {
-
   
   addTrack = () => {
     //console.log(this.trackInput.value);
@@ -38,8 +35,6 @@ class App extends Component {
     return (
       <div className="App">
         
-
-
         <div>
           <input type="text" ref={(input) => { this.trackInput = input }} />
           <button onClick={this.addTrack}>add Track</button>
